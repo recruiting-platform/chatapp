@@ -129,7 +129,9 @@ const CoachForm = () => {
             onChange={handleConfirmPasswordChange}
           />
         </div>
-        <button type="submit">Register</button>
+        <button className="form-submit" type="submit">
+          Register
+        </button>
       </form>
     </div>
   );

@@ -99,7 +99,9 @@ const StudentAthleteForm = () => {
             <span>I agree to the terms and conditions.</span>
           </div>
         </div>
-        <button type="submit">Register</button>
+        <button className="form-submit" type="submit">
+          Register
+        </button>
       </form>
     </div>
   );
