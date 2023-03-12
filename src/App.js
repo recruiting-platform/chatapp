@@ -6,6 +6,9 @@ import LoginForm from "./components/login/LoginForm";
 import HomePage from "./pages/home/HomePage";
 
 import "./App.css";
+import ChatSettings from "./components/chatSettings/ChatSettings";
+import CoachForm from "./pages/signup/CoachForm";
+import StudentAthleteForm from "./pages/signup/StudentAthleteForm";
 
 const App = () => {
   // if there is no username, render login form
@@ -16,6 +19,13 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/signup/coach" element={<CoachForm />} />
+          <Route
+            path="/signup/student-athlete"
+            element={<StudentAthleteForm />}
+          />
+
           <Route
             path="/chat"
             element={
@@ -28,6 +38,7 @@ const App = () => {
                   renderChatFeed={(chatAppProps) => (
                     <ChatFeed {...chatAppProps} />
                   )}
+                  renderChatSettingsTop={() => <ChatSettings />}
                 />
               </div>
             }

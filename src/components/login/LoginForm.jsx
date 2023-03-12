@@ -29,7 +29,8 @@ const LoginForm = () => {
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
 
-      window.location.reload();
+      // Redirect to chat page
+      window.location.href = "/chat";
       setError("");
     } catch (err) {
       setError("Incorrect username or password");
@@ -39,8 +40,8 @@ const LoginForm = () => {
   return (
     <div className="wrapper">
       <div className="form">
-        <h1 className="title">Start chatting...</h1>
         <form onSubmit={handleSubmit}>
+          <h1 className="title">Start chatting...</h1>
           <input
             type="text"
             value={username}

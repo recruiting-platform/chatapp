@@ -7,7 +7,9 @@ export default function HomePage() {
   return (
     <div className="home">
       <Navbar />
-      <div className="ComponentContainer"></div>
+      <div className="ComponentContainer">
+        <h1>Welcome to the Home Page!</h1>
+      </div>
     </div>
   );
 }
