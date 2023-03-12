@@ -23,50 +23,55 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <ul>
-        <li>
-          <Link to="/" className="nav-link">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/login" className="nav-link">
-            Login
-          </Link>
-        </li>
-        <li
-          className="signup-link"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          Sign Up
-          {showDropdown && (
-            <div className="dropdown-menu">
-              <Link to="/signup/student-athlete" className="dropdown-link">
-                Student Athlete
-              </Link>
-              <Link to="/signup/coach" className="dropdown-link">
-                Coach
-              </Link>
-            </div>
-          )}
-        </li>
-
-        {isLoggedIn ? (
-          <>
-            <li>
-              <Link to="/chat" className="nav-link">
-                Chat
-              </Link>
-            </li>
-            <li>
-              <button onClick={handleLogoutClick} className="logout-btn">
-                Logout
-              </button>
-            </li>
-          </>
-        ) : null}
-      </ul>
+      <div className="navbar-left">
+        <ul>
+          <li>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-right">
+        <ul>
+          <li>
+            <Link to="/login" className="nav-link">
+              Login
+            </Link>
+          </li>
+          <li
+            className="signup-link"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            Sign Up
+            {showDropdown && (
+              <div className="dropdown-menu">
+                <Link to="/signup/student-athlete" className="dropdown-link">
+                  Student Athlete
+                </Link>
+                <Link to="/signup/coach" className="dropdown-link">
+                  Coach
+                </Link>
+              </div>
+            )}
+          </li>
+          {isLoggedIn ? (
+            <>
+              <li>
+                <Link to="/chat" className="nav-link">
+                  Chat
+                </Link>
+              </li>
+              <li>
+                <button onClick={handleLogoutClick} className="logout-btn">
+                  Logout
+                </button>
+              </li>
+            </>
+          ) : null}
+        </ul>
+      </div>
     </nav>
   );
 };

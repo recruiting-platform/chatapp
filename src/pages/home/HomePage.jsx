@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="home">
       <Navbar />
       <div className="ComponentContainer">
-        <h1>Home Page</h1>
+        <h1>Placeholder for homepage</h1>
       </div>
     </div>
   );

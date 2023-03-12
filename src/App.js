@@ -9,6 +9,7 @@ import "./App.css";
 import ChatSettings from "./components/chatSettings/ChatSettings";
 import CoachForm from "./pages/signup/CoachForm";
 import StudentAthleteForm from "./pages/signup/StudentAthleteForm";
+import { OptionsSettings } from "react-chat-engine-components";
 
 const App = () => {
   // if there is no username, render login form
@@ -39,6 +40,7 @@ const App = () => {
                     <ChatFeed {...chatAppProps} />
                   )}
                   renderChatSettingsTop={() => <ChatSettings />}
+                  renderOptionsSettings={() => <OptionsSettings />}
                 />
               </div>
             }
