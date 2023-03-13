@@ -1,9 +1,9 @@
-/* .signup-container {
+.signup-container {
   width: 60%;
   margin: 0 auto;
 }
 
-form {
+.register-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@ label {
   font-size: 16px;
 }
 
-input {
+.input-register {
   width: 300px;
   height: 30px;
   border-radius: 5px;
@@ -36,8 +36,8 @@ input::placeholder {
   color: rgb(255, 255, 255);
 }
 
-button[type="submit"],
-button {
+.athlete-coach-form-submit,
+.student-athlete-form-submit {
   width: 100px;
   height: 30px;
   background-color: #ff0b0b;
@@ -45,10 +45,6 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #960e0e;
 }
 
 select {
@@ -73,4 +69,4 @@ select option {
   margin-bottom: 20px;
   font-size: 16px;
   color: rgb(255, 255, 255);
-} */
+}

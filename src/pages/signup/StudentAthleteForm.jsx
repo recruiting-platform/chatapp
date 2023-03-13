@@ -26,9 +26,10 @@ const StudentAthleteForm = () => {
 
   return (
     <div className="signup-form-container">
-      <form onSubmit={handleSubmit}>
+      <form className="register-form" onSubmit={handleSubmit}>
         <h1>Student-Athlete Registration</h1>
         <input
+          className="input-register"
           type="text"
           id="firstName"
           name="firstName"
@@ -39,6 +40,7 @@ const StudentAthleteForm = () => {
         />
 
         <input
+          className="input-register"
           type="text"
           id="lastName"
           name="lastName"
@@ -49,6 +51,7 @@ const StudentAthleteForm = () => {
         />
 
         <input
+          className="input-register"
           type="email"
           id="email"
           name="email"
@@ -59,6 +62,7 @@ const StudentAthleteForm = () => {
         />
 
         <input
+          className="input-register"
           type="date"
           id="graduationDate"
           name="graduationDate"
@@ -68,6 +72,7 @@ const StudentAthleteForm = () => {
           required
         />
         <input
+          className="input-register"
           type="password"
           id="password"
           name="password"
@@ -78,6 +83,7 @@ const StudentAthleteForm = () => {
         />
 
         <input
+          className="input-register"
           type="password"
           id="confirmPassword"
           name="confirmPassword"
@@ -99,7 +105,7 @@ const StudentAthleteForm = () => {
             <span>I agree to the terms and conditions.</span>
           </div>
         </div>
-        <button className="form-submit" type="submit">
+        <button className="form-submit athlete-coach-form-submit" type="submit">
           Register
         </button>
       </form>

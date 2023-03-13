@@ -39,27 +39,27 @@ const LoginForm = () => {
 
   return (
     <div className="wrapper">
-      <div className="form">
+      <div className="register-form">
         <form onSubmit={handleSubmit}>
           <h1 className="title">Start chatting...</h1>
           <input
+            className="input-register"
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="input"
             placeholder="Username"
             required
           />
           <input
+            className="input-register"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="input"
             placeholder="Password"
             required
           />
           <div align="center">
-            <button type="submit" className="button">
+            <button type="submit" className="login-button">
               <span>Submit</span>
             </button>
           </div>

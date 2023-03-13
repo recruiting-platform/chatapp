@@ -50,10 +50,11 @@ const CoachForm = () => {
 
   return (
     <div className="signup-form-container">
-      <form onSubmit={handleSubmit}>
+      <form className="register-form" onSubmit={handleSubmit}>
         <h1>Coach Registration</h1>
         <div>
           <input
+            className="input-register"
             type="text"
             id="firstName"
             placeholder="First Name"
@@ -63,6 +64,7 @@ const CoachForm = () => {
         </div>
         <div>
           <input
+            className="input-register"
             type="text"
             id="lastName"
             placeholder="Last Name"
@@ -72,6 +74,7 @@ const CoachForm = () => {
         </div>
         <div>
           <input
+            className="input-register"
             type="text"
             id="schoolName"
             placeholder="School Name"
@@ -81,6 +84,7 @@ const CoachForm = () => {
         </div>
         <div>
           <input
+            className="input-register"
             type="email"
             id="universityEmail"
             placeholder="University Email"
@@ -98,7 +102,7 @@ const CoachForm = () => {
             <option value="Reining">Reining</option>
           </select>
         </div>
-        <div>
+        <div c>
           <select
             id="association"
             name="association"
@@ -113,6 +117,7 @@ const CoachForm = () => {
         </div>
         <div>
           <input
+            className="input-register"
             type="password"
             id="password"
             placeholder="Password"
@@ -122,6 +127,7 @@ const CoachForm = () => {
         </div>
         <div>
           <input
+            className="input-register"
             type="password"
             id="confirmPassword"
             placeholder="Confirm Password"
@@ -129,7 +135,7 @@ const CoachForm = () => {
             onChange={handleConfirmPasswordChange}
           />
         </div>
-        <button className="form-submit" type="submit">
+        <button className="form-submit athlete-coach-form-submit" type="submit">
           Register
         </button>
       </form>

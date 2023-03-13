@@ -1,5 +1,5 @@
 import React from "react";
-import { ChatSettingsTop, OptionsSettings } from "react-chat-engine";
+import { ChatSettingsTop } from "react-chat-engine";
 import { Link } from "react-router-dom";
 import { handleLogout } from "../logout/Logout";
 
@@ -13,7 +13,6 @@ const ChatSettings = ({ title }) => {
         <button onClick={handleLogout}>Logout</button>
       </div>
       <ChatSettingsTop />
-      <OptionsSettings />
     </div>
   );
 };
